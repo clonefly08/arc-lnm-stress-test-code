@@ -1,8 +1,7 @@
 # ARC LNM stress test - analysis code
 
 Code for: "A systematic stress test of lesion network mapping in 226 patients
-with post-stroke aphasia" (Wei Wang, Ye Wang, Huibin Tan, Fei Xiong;
-corresponding author: Fei Xiong, clonefly08@163.com).
+with post-stroke aphasia" (corresponding author: Fei Xiong, clonefly08@163.com).
 
 ## Run order (see file headers for details)
 1. phase0_audit.py            mask audit
