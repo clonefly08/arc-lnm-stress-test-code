@@ -1,0 +1,13 @@
+# Cortex Methods-and-Assumptions revision — shared parameter table (Execution Manual §1.3)
+gm_prior_main: 0.45          # T5-1 new primary (strict GM, ventricles excluded)
+gm_prior_sens: 0.25          # current primary (kept for comparison)
+exclude_ventricles: true     # Harvard-Oxford lateral ventricles + MNI CSF
+alpha_per_tail: 0.025        # target per-tail alpha (total FWER <= 0.05); current files use 0.05/tail
+n_perm: 5000
+n_random_subsets: 200        # T2 null draws
+n_perm_calib: 1000           # T2 per-calibration-subset permutations
+subset_size: 76              # matches low-entropy tertile
+nested_boot: 1000            # T5-9 (may reduce to 500 per manual R4)
+split_half: 20
+seed: 42
+threads: 4                   # keep CPU <= 65%
